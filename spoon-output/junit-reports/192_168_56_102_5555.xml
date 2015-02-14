@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.robgthai.spoon.demo.hellospoon_demo.test" tests="9" failures="0" errors="0" skipped="0" time="22.518" timestamp="2015-02-13T14:45:47" hostname="localhost">
+  <properties />
+  <testcase name="testApplicationTestCaseSetUpProperly" classname="com.robgthai.spoon.demo.hellospoon_demo.ApplicationTest" time="0.001" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="com.robgthai.spoon.demo.hellospoon_demo.ApplicationTest" time="0.0" />
+  <testcase name="test_LoginFail" classname="com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest" time="5.299" />
+  <testcase name="test_LoginFlow" classname="com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest" time="5.53" />
+  <testcase name="test_LoginWithInvalidEmail" classname="com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest" time="4.863" />
+  <testcase name="test_ResetRemoveEverything" classname="com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest" time="3.986" />
+  <testcase name="testActivityIsAvailable" classname="com.robgthai.spoon.demo.hellospoon_demo.MainActivityTest" time="1.246" />
+  <testcase name="testHelloWorldVisibleByDefault" classname="com.robgthai.spoon.demo.hellospoon_demo.MainActivityTest" time="0.466" />
+  <testcase name="testScreenshotIsWorking" classname="com.robgthai.spoon.demo.hellospoon_demo.MainActivityTest" time="1.134" />
+</testsuite>

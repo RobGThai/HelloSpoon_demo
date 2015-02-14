@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spoon Execution</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="static/bootstrap.min.css" rel="stylesheet">
+        <link href="static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="static/spoon.css" rel="stylesheet">
+        <link href="static/nivo-slider.css" rel="stylesheet">
+        <script src="static/jquery.min.js"></script>
+        <script src="static/bootstrap.min.js"></script>
+        <script src="static/jquery.nivo.slider.pack.js"></script>
+        <meta name="description" content="">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1 id="title"></h1>
+                <p id="subtitle"></p>
+            </div>
+
+            <div class="row">
+                <div id="test-info" class="span6">
+                    <!-- Current test information -->
+                    <div id="current-test-info" class="test-result">
+                        <h1 id="test-name"></h1>
+                        <h3 id="test-class-name"></h3>
+                        <h3 id="caption"></h3>
+                    </div>
+
+                    <!-- Overall test information -->
+                    <div id="overall-test-info">
+                        <p>Displaying test <span id="current-test-number">0</span> of <span id="total-test-size">0</span></p>
+                        <p>Tests executed on <span id="test-date">Friday, February 13, 9:45 PM</span>, in <span id="duration">1 minute, 48 seconds</span></p>
+                    </div>
+                </div>
+                <div id="slider-wrapper" class="theme-default span6">
+                    <div id="slider" class="nivoSlider"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var devices = [
+  {
+    "serial": "192_168_56_101_5555",
+    "name": "192_168_56_101_5555",
+    "testResults": []
+  },
+  {
+    "serial": "192_168_56_102_5555",
+    "name": "Genymotion Google Nexus 5 - 4.4.4 - API 19 - 1080x1920",
+    "details": "Running Android 4.4.4 (API 19) with locale en-US",
+    "testResults": [
+      {
+        "classSimpleName": "LoginActivityTest",
+        "methodPrettyName": "Login Fail",
+        "serial": "192_168_56_102_5555",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 0,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginFail/1423838725857_Start.png",
+            "caption": "Start"
+          },
+          {
+            "id": 1,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginFail/1423838727217_type_this.png",
+            "caption": "Type This"
+          },
+          {
+            "id": 2,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginFail/1423838729161_Clicked.png",
+            "caption": "Clicked"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "LoginActivityTest",
+        "methodPrettyName": "Login Flow",
+        "serial": "192_168_56_102_5555",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 3,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginFlow/1423838729681_Start.png",
+            "caption": "Start"
+          },
+          {
+            "id": 4,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginFlow/1423838730542_type_this.png",
+            "caption": "Type This"
+          },
+          {
+            "id": 5,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginFlow/1423838731312_type_isrobg.png",
+            "caption": "Type Isrobg"
+          },
+          {
+            "id": 6,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginFlow/1423838732493_type_gmail_com.png",
+            "caption": "Type Gmail Com"
+          },
+          {
+            "id": 7,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginFlow/1423838733260_password.png",
+            "caption": "Password"
+          },
+          {
+            "id": 8,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginFlow/1423838734230_Clicked.png",
+            "caption": "Clicked"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "LoginActivityTest",
+        "methodPrettyName": "Login With Invalid Email",
+        "serial": "192_168_56_102_5555",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 9,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginWithInvalidEmail/1423838736227_Start.png",
+            "caption": "Start"
+          },
+          {
+            "id": 10,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginWithInvalidEmail/1423838737499_type_this.png",
+            "caption": "Type This"
+          },
+          {
+            "id": 11,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginWithInvalidEmail/1423838738711_password.png",
+            "caption": "Password"
+          },
+          {
+            "id": 12,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_LoginWithInvalidEmail/1423838739492_Clicked.png",
+            "caption": "Clicked"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "LoginActivityTest",
+        "methodPrettyName": "Reset Remove Everything",
+        "serial": "192_168_56_102_5555",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 13,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_ResetRemoveEverything/1423838740148_Start.png",
+            "caption": "Start"
+          },
+          {
+            "id": 14,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_ResetRemoveEverything/1423838741042_type_this.png",
+            "caption": "Type This"
+          },
+          {
+            "id": 15,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_ResetRemoveEverything/1423838741885_password.png",
+            "caption": "Password"
+          },
+          {
+            "id": 16,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_ResetRemoveEverything/1423838742631_Login_Clicked.png",
+            "caption": "Login Clicked"
+          },
+          {
+            "id": 17,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.LoginActivityTest/test_ResetRemoveEverything/1423838743288_Reset_Clicked.png",
+            "caption": "Reset Clicked"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "MainActivityTest",
+        "methodPrettyName": "Screenshot Is Working",
+        "serial": "192_168_56_102_5555",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 18,
+            "path": "image/192_168_56_102_5555/com.robgthai.spoon.demo.hellospoon_demo.MainActivityTest/testScreenshotIsWorking/1423838745825_start.png",
+            "caption": "Start"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "serial": "04a813912238d4fd",
+    "name": "LGE Nexus 5",
+    "details": "Running Android 5.0 (API 21) with locale en-US",
+    "testResults": []
+  }
+];
+
+            function updateDevice(device) {
+                $('#title').text(device.name);
+                $('#subtitle').text(device.details);
+                $('#total-test-size').text(device.testResults.length)
+
+                testResultIndex = 0
+                updateTest(device.testResults[testResultIndex]);
+            }
+
+            function updateTest(testResult) {
+                $('#current-test-info').removeClass('pass fail error')
+                $('#current-test-info').addClass(testResult.status)
+                $('#test-name').text(testResult.methodPrettyName)
+                $('#test-class-name').text(testResult.classSimpleName)
+
+                $("#slider").empty();
+                $.each(testResult.screenshots, function(index, screenshot) {
+                    tag = '<img alt="' + screenshot.caption + '" src="' + screenshot.path + '" />'
+                    $('#slider').append(tag)
+                });
+
+                $('#current-test-number').text(testResultIndex + 1)
+                screenshotIndex = 0
+
+                // Re-initialize the slider with the new slides
+                $('#slider').nivoSlider({
+                    effect: 'boxRainGrow', // Specify sets like: 'fold,fade,sliceDown'
+                    animSpeed: 500, // Slide transition speed
+                    pauseTime: 3000, // How long each slide will show
+                    directionNav: false, // Next & Prev navigation
+                    controlNavThumbs: false, // Use thumbnails for Control Nav
+                    pauseOnHover: false, // Stop animation while hovering
+                    manualAdvance: false, // Force manual transitions
+                    beforeChange: function(){ // Triggers before a slide transition
+                        screenshotIndex++
+                        if(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex]) {
+                            $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                        }
+                    },
+                    lastSlide: function(){ // Triggers when last slide is shown
+                        $('#caption').text("")
+                    },
+                    afterLoad: function(){ // Triggers when slider has loaded
+                        $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                    },
+                    slideshowEnd: function() { // Triggers after all slides have been shown
+                        nextTestResult()
+                    }
+                });
+
+                // There's a bug in Nivo where it doesn't know what to do w/ only one screenshot.
+                if(testResult.screenshots.length == 1) {
+                    window.setTimeout(nextTestResult, 3000)
+                }
+            }
+
+            function nextTestResult() {
+                $('#slider').data('nivoslider').stop();
+                $('#slider-wrapper').empty()
+                $('#slider-wrapper').append($('<div id="slider" class="nivoSlider"/>'))
+
+                testResultIndex++
+                tests = devices[deviceIndex].testResults
+                if(testResultIndex < tests.length) {
+                    updateTest(tests[testResultIndex])
+                } else {
+                    nextDevice()
+                }
+            }
+
+            function nextDevice() {
+                if(deviceIndex == devices.length - 1) {
+                    location.reload() // Reload at end to load new spoon results.
+                } else {
+                    deviceIndex++
+                    updateDevice(devices[deviceIndex])
+                }
+            }
+
+            // If we start feeling fancy we could create an actual class. Until then, we're global.
+            var deviceIndex = 0;
+            var testResultIndex = 0;
+            var screenshotIndex = 0;
+
+            // Start it off
+            $(function() {
+                updateDevice(devices[deviceIndex]);
+            });
+        </script>
+    </body>
+</html>
